@@ -29,6 +29,18 @@ namespace DataKaryawan
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+
+            services.AddCors(options =>
+            {
+                options.AddPolicy("AllowAll", builder =>
+            {
+                builder
+                    .AllowAnyOrigin()      // atau .WithOrigins("http://localhost:3000") kalau mau spesifik
+                    .AllowAnyMethod()
+                    .AllowAnyHeader();
+            });
+        });
+
             services.AddControllers();
             connectionString = Configuration;
             appSettings = appPath;
@@ -50,11 +62,9 @@ namespace DataKaryawan
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseHttpsRedirection();
+            // app.UseHttpsRedirection();
 
             app.UseRouting();
-
-            app.UseAuthorization();
 
             app.UseCors(x => x
                 .AllowAnyMethod()
@@ -62,6 +72,8 @@ namespace DataKaryawan
                 .SetIsOriginAllowed(origin => true)
                 .AllowCredentials()
             );
+
+            app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {

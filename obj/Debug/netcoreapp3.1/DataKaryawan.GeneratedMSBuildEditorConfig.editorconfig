@@ -1,6 +1,6 @@
 is_global = true
 build_property.RootNamespace = DataKaryawan
-build_property.ProjectDir = D:\NetCore\DataKaryawan - Copy\
+build_property.ProjectDir = D:\Coding\data-karyawan-be\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.CsWinRTUseWindowsUIXamlProjections = false
