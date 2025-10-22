@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "PbsGJ3pRefU=",
+  "dgSpecHash": "dU0stq1+K9o=",
   "success": true,
-  "projectFilePath": "E:\\Coding\\data-karyawan-be\\DataKaryawan.csproj",
+  "projectFilePath": "D:\\NetCore\\DataKaryawan\\DataKaryawan.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Faisal\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\3.1.2\\microsoft.aspnetcore.jsonpatch.3.1.2.nupkg.sha512",
     "C:\\Users\\Faisal\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\3.1.2\\microsoft.aspnetcore.mvc.newtonsoftjson.3.1.2.nupkg.sha512",
@@ -40,9 +40,9 @@
       "code": "NU1902",
       "level": "Warning",
       "message": "Package 'System.Data.SqlClient' 4.8.2 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-8g2p-5pqh-5jmc",
-      "projectPath": "E:\\Coding\\data-karyawan-be\\DataKaryawan.csproj",
+      "projectPath": "D:\\NetCore\\DataKaryawan\\DataKaryawan.csproj",
       "warningLevel": 1,
-      "filePath": "E:\\Coding\\data-karyawan-be\\DataKaryawan.csproj",
+      "filePath": "D:\\NetCore\\DataKaryawan\\DataKaryawan.csproj",
       "libraryId": "System.Data.SqlClient",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
@@ -52,9 +52,9 @@
       "code": "NU1903",
       "level": "Warning",
       "message": "Package 'System.Data.SqlClient' 4.8.2 has a known high severity vulnerability, https://github.com/advisories/GHSA-98g6-xh36-x2p7",
-      "projectPath": "E:\\Coding\\data-karyawan-be\\DataKaryawan.csproj",
+      "projectPath": "D:\\NetCore\\DataKaryawan\\DataKaryawan.csproj",
       "warningLevel": 1,
-      "filePath": "E:\\Coding\\data-karyawan-be\\DataKaryawan.csproj",
+      "filePath": "D:\\NetCore\\DataKaryawan\\DataKaryawan.csproj",
       "libraryId": "System.Data.SqlClient",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"

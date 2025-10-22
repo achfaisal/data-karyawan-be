@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DataKaryawan")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b9ce04c71d6541c84b565c334c95bd3a04aecf87")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+58995ce579f7f670d3842df470ebd534e1c02bb7")]
 [assembly: System.Reflection.AssemblyProductAttribute("DataKaryawan")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DataKaryawan")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1852,11 +1852,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Coding\\data-karyawan-be\\DataKaryawan.csproj",
+      "projectUniqueName": "D:\\NetCore\\DataKaryawan\\DataKaryawan.csproj",
       "projectName": "DataKaryawan",
-      "projectPath": "E:\\Coding\\data-karyawan-be\\DataKaryawan.csproj",
+      "projectPath": "D:\\NetCore\\DataKaryawan\\DataKaryawan.csproj",
       "packagesPath": "C:\\Users\\Faisal\\.nuget\\packages\\",
-      "outputPath": "E:\\Coding\\data-karyawan-be\\obj\\",
+      "outputPath": "D:\\NetCore\\DataKaryawan\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
