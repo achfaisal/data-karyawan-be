@@ -193,6 +193,54 @@ namespace DataKaryawan.Repository
             return statusUpdate;
         }
 
+        public string DeleteDataKaryawan(int id)
+{
+    string deleteUpdate;
+
+    try
+    {
+        using SqlConnection conn = new SqlConnection(_connectionString);
+        conn.Open();
+
+        using SqlCommand cmd = new SqlCommand("spDataKaryawanDelete", conn);
+        cmd.CommandType = CommandType.StoredProcedure;
+
+        // Parameter utama: Id
+        cmd.Parameters.Add("@Id", SqlDbType.Int).Value = id;
+
+        // Parameter return value
+        SqlParameter retvalParam = new SqlParameter("@retval", SqlDbType.Int)
+        {
+            Direction = ParameterDirection.ReturnValue
+        };
+        cmd.Parameters.Add(retvalParam);
+
+        cmd.CommandTimeout = 5000;
+        cmd.ExecuteNonQuery();
+
+        int retval = Convert.ToInt32(retvalParam.Value);
+
+        // Cek hasil return dari stored procedure
+        if (retval == 1)
+            deleteUpdate = "Delete success";
+        else if (retval == -1)
+            deleteUpdate = "Data not found";
+        else
+            deleteUpdate = "Delete failed";
+
+        return deleteUpdate;
+    }
+    catch (SqlException ex)
+    {
+        throw new Exception($"SQL Error DeleteDataKaryawan: {ex.Message}");
+    }
+    catch (Exception ex)
+    {
+        throw new Exception($"Error DeleteDataKaryawan: {ex.Message}");
+    }
+}
+
+
 
     }
 }

@@ -143,6 +143,28 @@ namespace DataKaryawan.Controllers
             }
         }
 
+        [HttpDelete("delete/{id}")]
+public IActionResult DeleteDataKaryawan(int id)
+{
+    RetvalResponse response = new RetvalResponse();
+
+    try
+    {
+        // Panggil repository (proc) dengan parameter id
+        string deleteStatus = _proc.DeleteDataKaryawan(id);
+
+        response.Retval = deleteStatus;
+        return Ok(response);
+    }
+    catch (Exception ex)
+    {
+        logger.Error(ex, "[Server Error] DeleteDataKaryawan failed");
+        response.Retval = "Server Error: " + ex.Message;
+        return StatusCode(500, response);
+    }
+}
+
+
 
     }
 }
